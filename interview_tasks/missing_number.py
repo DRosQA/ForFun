@@ -26,6 +26,6 @@ if __name__ == '__main__':
     numbers_array = [1, 2, 4, 5, 7, 8, 6]
     result = find_missing_number(numbers_array)
     if result > len(numbers_array):
-        print('array contains all numbers up to', len(numbers_array))
+        print('given array contains all numbers up to', len(numbers_array))
     else:
-        print('missing number is', result)
+        print('the missing number in the given array is', result)
