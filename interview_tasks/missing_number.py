@@ -1,4 +1,4 @@
-def missingNum(numbers_array):
+def find_missing_number(numbers_array):
     n = len(numbers_array) + 1
     xor_array = 0
     xor_nubers = 0
