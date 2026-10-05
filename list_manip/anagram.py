@@ -5,7 +5,7 @@ def check_for_anagrams(args):
         # converting to list so it takes sets
         return all(sorted(str(x)) == sorted(str(list(args)[0])) for x in args)
     else:
-        print("argument should have more than one element to properly test for anagrams")
+        print("argument list should have more than one element to properly test for anagrams")
         return False
 
 
