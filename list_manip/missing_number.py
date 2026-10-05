@@ -3,7 +3,7 @@ def find_missing_number(array):
         if isinstance(item, int) and not isinstance(item, bool):
             continue
         else:
-            print('Argument list contains non-integer item.')
+            print('argument list contains non-integer item.')
             return False
 
     n = len(array) + 1
@@ -34,6 +34,6 @@ if __name__ == '__main__':
     numbers_array = [1, 2, 4, 5, 7, 8, 6]
     result = find_missing_number(numbers_array)
     if result > len(numbers_array):
-        print('given array contains all numbers up to', len(numbers_array))
+        print(f'{numbers_array} contains all numbers up to', len(numbers_array))
     else:
         print(f'the missing number in {numbers_array} is', result)
