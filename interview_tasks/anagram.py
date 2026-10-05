@@ -7,4 +7,4 @@ if __name__ == '__main__':
     text = 'text'
     text2 = 'xtte'
     result = compare_strings(text, text2)
-    print('are strings anagrams?', result)
+    print(f"are \'{text}\' and \'{text2}\' anagrams of each other?", result)
