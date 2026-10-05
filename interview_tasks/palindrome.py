@@ -8,12 +8,10 @@ def check_if_palindrome(text):
         for i in range(1, len(text)):
             if text[i - 1] != text[len(text) - i]:
                 return False
-                break
             else:
                 i = i + 1
                 if i > len(text) / 2:
                     return True
-                    break
     else:
         return False
 
