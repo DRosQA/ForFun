@@ -19,5 +19,7 @@ def group_by_owners(files):
     return owners
 
 
+owners_list = {'Input.txt': 'Romek', 'Code.py': 'Staszek', 'Output.txt': 'Romek'}
+
 if __name__ == '__main__':
-    group_by_owners({'Input.txt': 'Romek', 'Code.py': 'Staszek', 'Output.txt': 'Romek'})
+    group_by_owners(owners_list)
