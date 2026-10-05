@@ -7,4 +7,4 @@ def reverse_string(text):
 if __name__ == '__main__':
     text = 'testingTheReverse'
     result = reverse_string(text)
-    print(result)
+    print(f"\'{text}\' reversed is \'{result}\'")
