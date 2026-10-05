@@ -4,9 +4,9 @@ source: https://www.geeksforgeeks.org/interview-prep/practice-for-cracking-any-c
 
 source: https://algocademy.com/blog/comprehensive-guide-to-coding-interview-questions-types-examples-and-how-to-prepare/
 
-- Find the missing number in an array containing 1 to N
-- Reverse a string in place
-- Check if a string is a palindrome
+- ~~Find the missing number in an array containing 1 to N~~
+- ~~Reverse a string in place~~
+- ~~Check if a string is a palindrome~~
 - Find all anagrams in a string
 - Implement a function to perform basic string compression
 - Detect a cycle in a linked list
@@ -19,7 +19,7 @@ source: https://algocademy.com/blog/comprehensive-guide-to-coding-interview-ques
 
 source: https://www.codinginterview.com/guide/top-100-coding-interview-questions/
 
-- Two Sum: Find two numbers in an array that add up to a target value.
+- ~~Two Sum: Find two numbers in an array that add up to a target value.~~
 - Best Time to Buy and Sell Stock: Determine the maximum profit from a single buy-sell transaction.
 - Contains Duplicate: Check whether any value appears at least twice in an array.
 - Product of Array Except Self: Return an array where each element is the product of all other elements without using division.
