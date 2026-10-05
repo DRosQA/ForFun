@@ -36,4 +36,4 @@ if __name__ == '__main__':
     if result > len(numbers_array):
         print('given array contains all numbers up to', len(numbers_array))
     else:
-        print('the missing number in the given array is', result)
+        print(f'the missing number in {numbers_array} is', result)

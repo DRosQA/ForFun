@@ -24,7 +24,7 @@ def find_two_sum(array, target_sum):
         if isinstance(item, int) and not isinstance(item, bool):
             continue
         else:
-            print('Argument list contains non-integer item')
+            print('argument list contains non-integer item')
             return False
     # must be sorted for binary search to work
     array.sort()
@@ -45,10 +45,10 @@ if __name__ == "__main__":
     sum_target = 1
 
     if not find_two_sum(numbers_list, sum_target):
-        print("Did not find any two numbers within given array to sum_target to", sum_target)
+        print("did not find any two numbers within given array to sum_target to", sum_target)
     else:
         print(
-            f"From the given array of {numbers_list}, "
+            f"from the given array of {numbers_list}, "
             f"{str(find_two_sum(numbers_list, sum_target))
                 .replace('{', '').replace('}', '').replace(',', ' and')}"
             f" sum to the target of {sum_target}")

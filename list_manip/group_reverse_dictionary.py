@@ -9,4 +9,4 @@ def group_by_values(arg):
 
 if __name__ == '__main__':
     example_dictionary = {'Input.txt': 'Romek', 'Code.py': 'Staszek', 'Output.txt': 'Romek'}
-    print(group_by_values(example_dictionary))
+    print(f"dictionary {example_dictionary} grouped by values is {group_by_values(example_dictionary)}")

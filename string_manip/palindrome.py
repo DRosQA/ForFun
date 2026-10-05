@@ -14,32 +14,7 @@ def check_if_palindrome(arg):
         return False
 
 
-def reverse(arg):
-    newarr = []
-    for item in arg:
-        newarr.append((item[1], item[0]))
-    print(newarr)
-
-
 if __name__ == '__main__':
     text = "abba"
-    test_data_palindromes = [
-        (False, ''),
-        (False, 'o'),
-        (True, 'wow'),
-        (False, 'oh'),
-        (False, 'omg'),
-        (False, 'meme'),
-        (False, 'hello'),
-        (True, 'Madam'),
-        (True, 'papap'),
-        (True, 'I did,. did I'),
-        (True, 121),
-        (False, 123),
-        (True, ("me", "em")),
-        (True, ["me", "em"]),
-        (True, {"me", "em"})
-    ]
-    reverse(test_data_palindromes)
     result = check_if_palindrome(text)
     print(f"is \'{text}\' a palindrome?", result)
