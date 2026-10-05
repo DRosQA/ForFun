@@ -8,14 +8,16 @@ For example, for a dictionary:
 the group_by_owners function should return: 
     {'Romek': ['Input.txt', 'Output.txt'], 'Staszek': ['Code.py']}.
 """
-group_by_owners()
-//
-owners = []
-for x in files:
-    owners.add(files[x])
 
-for key in a_dict:
-    ...
-print(key, '->', a_dict[key])
 
-return owners
+def group_by_owners(files):
+    print(files)
+    owners = {}
+    for key, value in files.items():
+        owners.setdefault(value, []).append(key)
+    print(owners)
+    return owners
+
+
+if __name__ == '__main__':
+    group_by_owners({'Input.txt': 'Romek', 'Code.py': 'Staszek', 'Output.txt': 'Romek'})
