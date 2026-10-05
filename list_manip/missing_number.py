@@ -1,7 +1,14 @@
-def find_missing_number(numbers_array):
-    n = len(numbers_array) + 1
+def find_missing_number(array):
+    for item in array:
+        if isinstance(item, int) and not isinstance(item, bool):
+            continue
+        else:
+            print('Argument list contains non-integer item.')
+            return False
+
+    n = len(array) + 1
     xor_array = 0
-    xor_nubers = 0
+    xor_numbers = 0
 
     # xor -> convert to binary and compare, so n xor x = is n and x different?
     # then write back to binary and convert to integer
@@ -13,14 +20,15 @@ def find_missing_number(numbers_array):
 
     # XOR all array elements - will tell us what numbers ARE in the array
     for i in range(n - 1):
-        xor_array ^= numbers_array[i]
+        xor_array ^= array[i]
 
     # XOR all numbers from 1 to n - will tell us what numbers SHOULD be in the array
     for i in range(1, n + 1):
-        xor_nubers ^= i
+        xor_numbers ^= i
 
-    # Missing number is the xor of xor_nubers and xor_array
-    return xor_nubers ^ xor_array
+    # Missing number is the xor of xor_numbers and xor_array
+    return xor_numbers ^ xor_array
+
 
 if __name__ == '__main__':
     numbers_array = [1, 2, 4, 5, 7, 8, 6]
