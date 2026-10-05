@@ -24,7 +24,7 @@ def find_two_sum(array, target_sum):
         if isinstance(item, int) and not isinstance(item, bool):
             continue
         else:
-            print('argument list contains non-integer item')
+            print('argument list contains a non-integer item')
             return False
     # must be sorted for binary search to work
     array.sort()

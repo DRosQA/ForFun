@@ -3,7 +3,7 @@ def find_missing_number(array):
         if isinstance(item, int) and not isinstance(item, bool):
             continue
         else:
-            print('argument list contains non-integer item.')
+            print('argument list contains a non-integer item')
             return False
 
     n = len(array) + 1
@@ -15,7 +15,7 @@ def find_missing_number(array):
     # 2 xor 3 = 10 (binary 2) compared to 11 (binary 3), which results in 01 (binary 1)
     # letting us know they're not the same
     # xor is associative and commutative -> order of operations doesn't matter, (x ^ z) ^ c = (c ^ x) ^ z
-    # as such, if two arrays are identical, their cumulative xor will the the same
+    # as such, if two arrays are identical, their cumulative xor will be the same
     # as such, the difference between those xors will be the bits that are different, i.e. the missing number
 
     # XOR all array elements - will tell us what numbers ARE in the array
