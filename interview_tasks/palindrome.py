@@ -6,7 +6,7 @@ def check_if_palindrome(text):
     for char in text:
         if char in string.punctuation:
             text = text.replace(char, "")
-    if len(text)>0:    
+    if len(text) > 1:     # making the executive decision to judge that 1-character strings are not palindromes
         # check if string is identical to reversed string
         return text == text[::-1]
     else:
