@@ -7,14 +7,20 @@ def check_if_palindrome(arg):
     for char in arg:
         if char in string.punctuation:
             arg = arg.replace(char, "")
-    if len(arg) > 1:  # making the executive decision to judge that 1-character strings are not palindromes
+    if (
+        len(arg) > 1
+    ):  # making the executive decision to judge that 1-character strings are not palindromes
         # check if string is identical to reversed string
         return arg == arg[::-1]
     else:
+        print("Provided string too short to check for palindrome.")
         return False
 
 
-if __name__ == '__main__':
-    text = "abba"
+if __name__ == "__main__":
+    print("Checking if a string is a palindrome.", end=" ")
+    text = input("Enter a string to check:\n")
+    # text = "abba"
     result = check_if_palindrome(text)
-    print(f"is \'{text}\' a palindrome?", result)
+    if result:
+        print(f"Is '{text}' a palindrome?", result)
